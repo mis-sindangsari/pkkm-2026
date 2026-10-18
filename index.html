@@ -96,7 +96,7 @@
         tbody td {
             padding: 16px;
             border-bottom: 1px solid var(--border-color);
-            vertical-align: top;
+            vertical-align: middle;
             color: var(--text-muted);
         }
         
@@ -117,15 +117,39 @@
             border-top: 2px solid var(--kemenag-green);
             border-bottom: 2px solid var(--kemenag-green);
         }
+
+        .btn-link {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: var(--kemenag-green);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .btn-link:hover {
+            background-color: var(--kemenag-dark);
+            box-shadow: 0 4px 8px rgba(0, 123, 85, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .no-link {
+            font-size: 12px;
+            color: #999;
+            font-style: italic;
+        }
         
         /* Column Widths */
         th:nth-child(1), td:nth-child(1) { width: 5%; }
         th:nth-child(2), td:nth-child(2) { width: 22%; }
         th:nth-child(3), td:nth-child(3) { width: 26%; }
         th:nth-child(4), td:nth-child(4) { width: 27%; }
-        th:nth-child(5), td:nth-child(5) { width: 10%; }
-        th:nth-child(6), td:nth-child(6), 
-        th:nth-child(7), td:nth-child(7) { width: 5%; }
+        th:nth-child(5), td:nth-child(5) { width: 12%; }
         
         /* Footer */
         .footer {
@@ -142,6 +166,7 @@
             .header h1 { font-size: 20px; }
             .table-wrapper { padding: 15px; }
             td, th { padding: 12px; font-size: 13px; }
+            .btn-link { padding: 5px 10px; font-size: 11px; }
         }
     </style>
 </head>
@@ -156,40 +181,46 @@
             <table>
                 <thead>
                     <tr>
-                        <th style='text-align: center;'>No.</th><th style='text-align: left;'>Komponen/Aspek Penilaian</th><th style='text-align: left;'>Data Yang Diharapkan</th><th style='text-align: left;'>Bukti Hasil Kinerja</th><th style='text-align: center;'>Alamat link Google Drive</th>
+                        <th style='text-align: center;'>No.</th>
+                        <th style='text-align: left;'>Komponen/Aspek Penilaian</th>
+                        <th style='text-align: left;'>Data Yang Diharapkan</th>
+                        <th style='text-align: left;'>Bukti Hasil Kinerja</th>
+                        <th style='text-align: center;'>Alamat link Google Drive</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class='section-header'><td style='text-align: center;'>I</td><td style=''>Usaha Pengembangan Madrasah</td><td style=''></td><td style=''></td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>1.1</td><td style=''>Meningkatkan Kualitas Pembelajaran</td><td style=''>1. Dokumen analisis SNP (standar isi, proses, penilaian, kompetensi lulusan).</td><td style=''>Kurikulum, Kalender pendidikan, Perangkat pembelajaran, Pedoman penilaian, Peraturan akademik, Buku kerja guru, Dokumen rapat penyusunan.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>1.2</td><td style=''>Menumbuhkan Lingkungan Belajar yang Kondusif</td><td style=''>1. Dok. peningkatan KKM, target hasil ulangan, dll;<br>2. Suasana asri;<br>3. Data kunjungan perpustakaan;<br>4. Dok penyelenggaraan kompetisi.</td><td style=''>RPP, struktur kurikulum, jadwal, observasi, laporan literasi, piagam.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>1.3</td><td style=''>Memanfaatkan teknologi digital</td><td style=''>Pemanfaatan TIK di manajemen, pembelajaran, kerja sama, dan promosi.</td><td style=''>Fasilitas TIK, komputer, web, pengelolaan SIM, pelaporan.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>1.4</td><td style=''>Membangun kemitraan</td><td style=''>Kegiatan dengan tokoh, masyarakat, pemerintah.</td><td style=''>MOU, Sister school, SK POMG.</td><td style='text-align: center;'></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>1.1</td><td style=''>Meningkatkan Kualitas Pembelajaran</td><td style=''>1. Dokumen analisis SNP (standar isi, proses, penilaian, kompetensi lulusan).</td><td style=''>Kurikulum, Kalender pendidikan, Perangkat pembelajaran, Pedoman penilaian, Peraturan akademik, Buku kerja guru, Dokumen rapat penyusunan.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1Its1FDgKT2LuNXzOrySuBSxfJRp9_OSP?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>1.2</td><td style=''>Menumbuhkan Lingkungan Belajar yang Kondusif</td><td style=''>1. Dok. peningkatan KKM, target hasil ulangan, dll;<br>2. Suasana asri;<br>3. Data kunjungan perpustakaan;<br>4. Dok penyelenggaraan kompetisi.</td><td style=''>RPP, struktur kurikulum, jadwal, observasi, laporan literasi, piagam.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/19RNu-ZR96QmQJPOMKpIkKsWUPkK-CGyd?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>1.3</td><td style=''>Memanfaatkan teknologi digital</td><td style=''>Pemanfaatan TIK di manajemen, pembelajaran, kerja sama, dan promosi.</td><td style=''>Fasilitas TIK, komputer, web, pengelolaan SIM, pelaporan.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1BKJ3EkIPlxZhHWNa_PPM2IAdeRJOg7cd?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>1.4</td><td style=''>Membangun kemitraan</td><td style=''>Kegiatan dengan tokoh, masyarakat, pemerintah.</td><td style=''>MOU, Sister school, SK POMG.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1gCBVauG4rIpiz5n8P_NBgRq37ODVPbiR?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
                     
                     <tr class='section-header'><td style='text-align: center;'>II</td><td style=''>Pelaksanaan Tugas Manajerial</td><td style=''></td><td style=''></td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>2.1</td><td style=''>Mengelola Guru dan Tenaga Kependidikan</td><td style=''>Program pembinaan, evaluasi, fasilitas staf.</td><td style=''>Program kerja, laporan workshop, buku pembinaan guru.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>2.2</td><td style=''>Mengelola Kesiswaan</td><td style=''>PPDB, pengembangan potensi diri, penanaman nilai.</td><td style=''>Brosur, laporan pengembangan, program akademik/non akademik.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>2.3</td><td style=''>Mengelola Kurikulum dan Pembelajaran</td><td style=''>Pengembangan kurikulum, pelaksanaan kalender, metode baru.</td><td style=''>Dokumen kurikulum, RPP, laporan MGMP.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>2.4</td><td style=''>Mengelola Sarana Prasarana</td><td style=''>Fasilitas, perpustakaan, lab, fasilitas penunjang.</td><td style=''>Buku inventaris, pemeliharaan.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>2.5</td><td style=''>Mengelola Keuangan</td><td style=''>RKJM, RKTM, RKAM, LPJ, Kas.</td><td style=''>Dokumen tsb.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>2.6</td><td style=''>Mengelola Kehumasan</td><td style=''>Kerja sama pemerintah/swasta.</td><td style=''>SK komite, MOU, laporan kegiatan.</td><td style='text-align: center;'></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>2.1</td><td style=''>Mengelola Guru dan Tenaga Kependidikan</td><td style=''>Program pembinaan, evaluasi, fasilitas staf.</td><td style=''>Program kerja, laporan workshop, buku pembinaan guru.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1K9F4GmtEjh2vKAHrbj31z2lMK8xGC6MH?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>2.2</td><td style=''>Mengelola Kesiswaan</td><td style=''>PPDB, pengembangan potensi diri, penanaman nilai.</td><td style=''>Brosur, laporan pengembangan, program akademik/non akademik.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1ehn38x-_Euso3jW6JlzoIb6aYp6tL297?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>2.3</td><td style=''>Mengelola Kurikulum dan Pembelajaran</td><td style=''>Pengembangan kurikulum, pelaksanaan kalender, metode baru.</td><td style=''>Dokumen kurikulum, RPP, laporan MGMP.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1Wr2qeMSMb-BlX-uHLw2f4OP3K1GHAgay?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>2.4</td><td style=''>Mengelola Sarana Prasarana</td><td style=''>Fasilitas, perpustakaan, lab, fasilitas penunjang.</td><td style=''>Buku inventaris, pemeliharaan.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1LY1B-u2S3sbT4SbYoQQMygdIRntaBZX1?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>2.5</td><td style=''>Mengelola Keuangan</td><td style=''>RKJM, RKTM, RKAM, LPJ, Kas.</td><td style=''>Dokumen tsb.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1hXs2EbtUjLzN2WRXwObNkrBHzmQ44s2j?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>2.6</td><td style=''>Mengelola Kehumasan</td><td style=''>Kerja sama pemerintah/swasta.</td><td style=''>SK komite, MOU, laporan kegiatan.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1DdjEjrlFStiT9xjhOFipLLsOd7yPKL0e?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
                     
-                    <tr class='section-header'><td style='text-align: center;'>III</td><td style=''>Pengembangan Kewirausahaan</td><td style=''></td><td style=''></td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>3.1</td><td style=''>Berinovasi</td><td style=''>Program madrasah, target pencapaian, dll.</td><td style=''>Visi misi, SK, pedoman.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>3.2</td><td style=''>Bekerja Keras</td><td style=''>Kegiatan inovatif, pemberdayaan potensi.</td><td style=''>RPP, RPM.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>3.4</td><td style=''>Pantang Menyerah</td><td style=''>Obyektif atasi konflik.</td><td style=''>Wawancara, observasi.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>3.5</td><td style=''>Membangun relasi</td><td style=''>Kegiatan dg pemangku kepentingan.</td><td style=''>MOU, SK POMG.</td><td style='text-align: center;'></td></tr>
+                    <tr class='section-header'><td style='text-align: center;'>III</td><td style=''>Pengembangan Kewirausahaan</td><td style=''></td><td style=''></td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1oFvCGjz1h-s41wHuvGshxbSzC8g7Wrhb?usp=drive_link" target="_blank" class="btn-link" style="background-color: var(--kemenag-dark);">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>3.1</td><td style=''>Berinovasi</td><td style=''>Program madrasah, target pencapaian, dll.</td><td style=''>Visi misi, SK, pedoman.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/17E66j1JlEDTTBC9zlJdhhIoExWdpwoaA?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>3.2</td><td style=''>Bekerja Keras</td><td style=''>Kegiatan inovatif, pemberdayaan potensi.</td><td style=''>RPP, RPM.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1PTy8ufWvRETJVt-n1laEwRkfIx9w5oM8?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>3.4</td><td style=''>Pantang Menyerah</td><td style=''>Obyektif atasi konflik.</td><td style=''>Wawancara, observasi.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1oxl-tY1TkFRcS9Q4vvhGx6ueoVGRDzGR?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>3.5</td><td style=''>Membangun relasi</td><td style=''>Kegiatan dg pemangku kepentingan.</td><td style=''>MOU, SK POMG.</td><td style='text-align: center;'><span class="no-link">-</span></td></tr>
                     
                     <tr class='section-header'><td style='text-align: center;'>IV</td><td style=''>Supervisi Guru</td><td style=''></td><td style=''></td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>4.1</td><td style=''>Merencanakan supervisi</td><td style=''>Rumusan masalah.</td><td style=''>Program, jadwal, instrumen.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>4.2</td><td style=''>Melaksanakan supervisi</td><td style=''>Pertemuan awal, hasil observasi.</td><td style=''>Notulen, instrumen, laporan PKG.</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>4.3</td><td style=''>Melakukan evaluasi</td><td style=''>Tindak lanjut sistem penilaian, pembinaan guru.</td><td style=''>Dokumen analisis, kegiatan PKB.</td><td style='text-align: center;'></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>4.1</td><td style=''>Merencanakan supervisi</td><td style=''>Rumusan masalah.</td><td style=''>Program, jadwal, instrumen.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1ty49QeMN5MUJm4XfilmGzJkyyuBlfWav?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>4.2</td><td style=''>Melaksanakan supervisi</td><td style=''>Pertemuan awal, hasil observasi.</td><td style=''>Notulen, instrumen, laporan PKG.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/10zrM2HXn-0tjPxtFBFot8g0AZR_xmCpW?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>4.3</td><td style=''>Melakukan evaluasi</td><td style=''>Tindak lanjut sistem penilaian, pembinaan guru.</td><td style=''>Dokumen analisis, kegiatan PKB.</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1UtAdGqVF_Fh0-uK4F5oCeS0mTJ12HLc-?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
                     
                     <tr class='section-header'><td style='text-align: center;'>V</td><td style=''>Capaian Prestasi</td><td style=''></td><td style=''></td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>5.1</td><td style=''>Prestasi lembaga</td><td style=''></td><td style=''>5 besar nasional/provinsi/kab</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>5.2</td><td style=''>Prestasi guru</td><td style=''></td><td style=''>Ijazah, sertifikat, KTI</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>5.3</td><td style=''>Prestasi siswa</td><td style=''></td><td style=''>5 besar</td><td style='text-align: center;'></td></tr>
-                    <tr class='data-row'><td style='text-align: center;'>5.4</td><td style=''>Mutu lulusan</td><td style=''></td><td style=''>Dokumen ANBK TKA</td><td style='text-align: center;'></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>5.1</td><td style=''>Prestasi lembaga</td><td style=''></td><td style=''>5 besar nasional/provinsi/kab</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1JumNN4HPdrg4xRkdflfSPdhoAcFaKM2L?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>5.2</td><td style=''>Prestasi guru</td><td style=''></td><td style=''>Ijazah, sertifikat, KTI</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1I2lP9qZw_1XJEU_EcwZvHS6DAlMwTNLT?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>5.3</td><td style=''>Prestasi siswa</td><td style=''></td><td style=''>5 besar</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1lBqAsv4K6yi_w60qhCO5tQVr4H4oS9Z-?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+                    <tr class='data-row'><td style='text-align: center;'>5.4</td><td style=''>Mutu lulusan</td><td style=''></td><td style=''>Dokumen ANBK TKA</td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/1RxkFw34FM6MBNAo9OLxgss07f6KaoMt8?usp=drive_link" target="_blank" class="btn-link">Buka Folder</a></td></tr>
+
+                    <tr class='section-header'><td style='text-align: center;'>VI</td><td style=''>Dokumen Pendukung</td><td style=''></td><td style=''></td><td style='text-align: center;'><a href="https://drive.google.com/drive/folders/17qoPPjA_4Vv6yIXo0m3QZ9EShEqaW77b?usp=drive_link" target="_blank" class="btn-link" style="background-color: var(--kemenag-dark);">Buka Folder</a></td></tr>
                 </tbody>
             </table>
         </div>
